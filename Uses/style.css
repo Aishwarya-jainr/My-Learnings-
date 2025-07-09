@@ -1,0 +1,65 @@
+
+.div1{
+    background: linear-gradient(to bottom right,#f1bc87,#f3bc55,#d1934c);
+    color: white;
+    padding:30px;
+    
+    display:grid;
+    align-items:center;
+
+}
+h1{
+    font-size:20px;
+    animation: slow 10s linear infinite;
+}
+button{
+    font-size:10px;
+    padding:10px;
+    border:none;
+    border-radius:50%;
+    margin-left:auto;
+    margin-right:auto;
+    transition: 1s;
+    animation:  zoom 2s linear infinite;
+}
+
+.div2{
+    background: linear-gradient(to bottom right,#c9f3a2,#74b142,#346d0e);
+    color: white;
+    padding:30px;
+
+    display:grid;
+    align-item:center;
+
+}
+
+body{
+margin:0;
+/*display:flex;*/
+}
+
+/*button:hover{
+    rotate:360deg;
+}*/
+@media screen and (min-width:500px){
+    body{
+        display:flex;
+    }
+}
+
+button:hover{
+    animation:zoom is forwards;
+}
+
+@keyframes zoom{
+    from{scale:0;}
+    to{scale:1;}
+}
+@keyframes slow{
+    0%{
+        transform: translatex(-100px);
+    }
+    100%{
+        transform: translate(100px);
+    }
+}
